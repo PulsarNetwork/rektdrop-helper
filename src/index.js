@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const faucetApi = 'https://rektdrop-helper.vercel.app/api/faucet';
+const faucetApi = 'https://rektdrop-ibc-faucet.vercel.app/api/faucet';
 
 var posted = {}
 
