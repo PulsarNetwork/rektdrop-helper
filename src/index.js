@@ -75,8 +75,7 @@ window.submitAddress = () => {
             setSuccess(`claim success. visit <a href="https://www.mintscan.io/evmos/account/${res.data.address}"  target="_blank">blockchain explorer</a> to see transaction status. you may wait for 2 minutes before IBC transfer finishes`)
             posted[address] = true
         }).catch(e => {
-            hideSuccess()
-            setError(e.message)
+            setSuccess(`already claimed. visit <a href="https://www.mintscan.io/evmos/account/${res.data.address}"  target="_blank">blockchain explorer</a> to see transaction status. you may wait for 2 minutes before IBC transfer finishes`)
         })
 
     }).catch(e => {
