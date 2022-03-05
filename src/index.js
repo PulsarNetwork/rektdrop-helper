@@ -70,10 +70,12 @@ window.submitAddress = () => {
         }
 
         console.log('post address', address)
+        setSuccess('wait a sec...')
         axios.post(faucetApi, JSON.stringify({address: address}), {headers: headers}).then(r => {
-            setSuccess(`claim success. visit <a href="https://www.mintscan.io/evmos/account/${res.data.address}">blockchain explorer</a> to see transaction status`)
+            setSuccess(`claim success. visit <a href="https://www.mintscan.io/evmos/account/${res.data.address}"  target="_blank">blockchain explorer</a> to see transaction status. you may wait for 2 minutes before IBC transfer finishes`)
             posted[address] = true
         }).catch(e => {
+            hideSuccess()
             setError(e.message)
         })
 
