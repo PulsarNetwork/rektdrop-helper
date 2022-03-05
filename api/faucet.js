@@ -32,7 +32,7 @@ module.exports = async (req, res) => {
         res.status(200).send('success');
         return;
     }).catch(e => {
-        res.status(500).send(e);
+        res.status(500).send(e.message);
         return;
     })
 
