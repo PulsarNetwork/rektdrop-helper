@@ -29,9 +29,11 @@ module.exports = async (req, res) => {
     axios.post(process.env.FAUCET_API, JSON.stringify({address: body.address, token: process.env.TOKEN}), {
         headers: headers
     }).then(r => {
+        console.log(`posting ${address}`)
         res.status(200).send('success');
         return;
     }).catch(e => {
+        console.error(`error ${e}`)
         res.status(500).send(e.message);
         return;
     })
