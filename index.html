@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Faucet Helping You Get EVMOS Airdrop</title>
+  <meta name="description" content="EVMOS Airdrop Helper">
+  <meta name="author" content="artoriamaster">
+
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<style>
+  p, h1, h2, h3, label {
+    color:white;
+    size: 18px;
+  }
+  body {
+    background-image: url('images/bg.jpg');
+    background-size:cover;
+    font-family: 'Verdana';
+  }
+  .title {
+    padding-left: 50px;
+  }
+  .main {
+    padding-left: 50px;
+  }
+  .error {
+    color: bisque;
+  }
+  .success {
+    color: gold;
+  }
+  a {
+    color: gold;
+  }
+</style>
+
+<body >
+ <div class="title">
+  <h1>IBC Faucet for EVMOS Airdrop</h1>
+ </div>
+ 
+ <div class="main">
+   <p>
+     This faucet gives a dust of OSMO through IBC transfer to help you claim EVMOS airdrop. 
+   </p>
+   <p>
+     The site will NEVER ask for your seed phrase or ask you to sign a transaction. All you need is an eligible wallet that has not yet finished the task. Receiving IBC transfer will help you claim 25% of total airdrop instantly.
+   </p>
+   <div>
+    <label for="address">Wallet address eligible for the airdrop (either 0x or evmos format):</label><br>
+    <input type="text" id="address" name="address"><br>
+    <input type="submit" value="I want some OSMO from IBC" onclick="submitAddress()">
+    <p id="errorMsg" class="error"></p><br>
+    <p id="successMsg" class="success"></p>
+  </div>
+
+  <div>
+    <h3>💡 Airdrop Information</h3>
+    <p><a href="https://rektdrop.com/mission-control">Official Rektdrop website</a></p>
+    <br>
+
+    <h3>💡 Airdrop Claiming Tips</h3>
+    <p>✨ Go to <a href="https://evmos.disperze.network/">evmos.disperze.network</a> and connect your wallet</p>
+    <p>✨ Go to "Governance" tab and vote for a proposal - this gives you 25%</p>
+    <p>✨ Go to "Stake" tab and delegate any amount to a validator - this gives you 25%</p>
+    <p>✨ Please support my EVMOS validator <a href="https://evmos.disperze.network/validators/evmosvaloper1xu3vxzyszxmf6rh4kcv7htup25az84yl7pk673">"Pulsar"</a>. I'll give 2% commission rebate back to you.</p>
+    <p>✨ If you see chain ID error when using Metamask, go to <a href="https://chainlist.info">chainlist.info</a>, search for EVMOS mainnet and add that network to Metamask. Refresh the claiming page to retry.</p>
+    <br>
+
+    
+    <h3>💡 About This Site</h3>
+    <p>🌠 Brought to you by <a href="https://twitter.com/artoriamaster">TechnoArtoria</a></p>
+  </div>
+ </div>
+
+
+ <br></br>
+ <div>
+   <p id="main-text"></p>
+ </div>
+ <div id="content">
+
+ </div>
+</body>
+</html>
